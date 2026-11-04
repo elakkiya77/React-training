@@ -1,0 +1,25 @@
+body {
+    background-color: lightblue;
+    font-family: Arial;
+}
+
+.container {
+    background-color: white;
+    width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+h1 {
+    color: blue;
+}
+
+h2 {
+    color: purple;
+}
+
+p {
+    color: black;
+}
