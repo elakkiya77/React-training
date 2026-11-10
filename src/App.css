@@ -1,0 +1,222 @@
+
+/* GLOBAL STYLING */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #5e6ea2, #f5eaff, #e3449e);
+  min-height: 100vh;
+  color: #101011;
+   border: none;
+}
+
+/* LOGIN PAGE */
+.login {
+  width: 380px;
+  max-width: 90%;
+  margin: 120px auto;
+  padding: 50px 35px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 25px;
+  box-shadow: 0 20px 50px rgba(7, 7, 7, 0.18);
+  border: 1px solid white;
+}
+
+.login h1 {
+  font-size: 36px;
+  color: #6d28d9;
+  margin-bottom: 15px;
+}
+
+.login p {
+  color: #453b3b;
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+
+/* HOME PAGE */
+.home {
+  min-height: 100vh;
+  padding: 45px 30px;
+  text-align: center;
+}
+
+.home > h1 {
+  font-size: 42px;
+  font-weight: 800;
+  color: #4c1d95;
+  margin-bottom: 10px;
+  text-shadow: 2px 3px 5px #c4b5fd;
+}
+
+.home > h2 {
+  font-size: 23px;
+  color: #64748b;
+  margin-bottom: 15px;
+}
+
+/* BUTTON DESIGN */
+button {
+  background: linear-gradient(135deg, #7c3aed, #db2777);
+  color: white;
+  padding: 13px 32px;
+  border: none;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 15px;
+  box-shadow: 0 6px 18px rgba(124, 58, 237, 0.25);
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-4px) scale(1.04);
+  box-shadow: 0 10px 25px rgba(124, 58, 237, 0.35);
+}
+
+
+/* USER CARD CONTAINER */
+.user-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 45px;
+}
+
+/* USER CARD DESIGN */
+.card {
+  background: white;
+  width: 280px;
+  padding: 30px 25px;
+  border-radius: 20px;
+  text-align: left;
+  border: 1px solid #e2e8f0;
+  border-bottom: 5px solid #7c3aed;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: #ede9fe;
+  border-radius: 50%;
+  top: -45px;
+  right: -35px;
+}
+
+.card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 18px 35px rgba(124, 58, 237, 0.18);
+}
+
+/* USER NAME */
+.card h2 {
+  color: #6d28d9;
+  font-size: 24px;
+  margin-bottom: 22px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #ede9fe;
+  position: relative;
+}
+
+/* USER DETAILS */
+.card p {
+  background: #f8f7ff;
+  padding: 11px;
+  border-radius: 8px;
+  color: #475569;
+  font-size: 14px;
+  margin-bottom: 12px;
+  overflow-wrap: anywhere;
+  transition: 0.3s;
+}
+
+.card p:hover {
+  background: #ede9fe;
+  padding-left: 16px;
+}
+
+/* DIFFERENT CARD COLORS */
+.card:nth-child(2) {
+  border-bottom-color: #ec4899;
+}
+
+.card:nth-child(2) h2 {
+  color: #db2777;
+}
+
+.card:nth-child(2)::before {
+  background: #fce7f3;
+}
+
+.card:nth-child(3) {
+  border-bottom-color: #06b6d4;
+}
+
+.card:nth-child(3) h2 {
+  color: #0891b2;
+}
+
+.card:nth-child(3)::before {
+  background: #cffafe;
+}
+
+.card:nth-child(4) {
+  border-bottom-color: #f59e0b;
+}
+
+.card:nth-child(4) h2 {
+  color: #d97706;
+}
+
+.card:nth-child(4)::before {
+  background: #fef3c7;
+}
+
+.card:nth-child(5) {
+  border-bottom-color: #10b981;
+}
+
+.card:nth-child(5) h2 {
+  color: #059669;
+}
+
+.card:nth-child(5)::before {
+  background: #d1fae5;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  .home {
+    padding: 30px 15px;
+  }
+
+  .home > h1 {
+    font-size: 32px;
+  }
+
+  .user-container {
+    gap: 20px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .login {
+    margin: 80px auto;
+  }
+}
